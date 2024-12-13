@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <string.h>
+int main (){
+    
+    int n[256]={0};
+    char a[50]={"abcdaa"};
+    for (int i =0;i<strlen(a);i++){
+        if (a[i]!= '\n'){
+            n[(int)a[i]]++;
 
-int main() {
-    char text[100] = "hello my name is long";
-    int count[256] = {0};
-
-    for (int i = 0; i < strlen(text); i++) {
-        count[(unsigned char)text[i]]++;
+        }
+        
     }
-
-    printf("Các ký tự và số lần xuất hiện:\n");
-    for (int i = 0; i < 256; i++) {
-        if (count[i] > 0) {
-            printf("Ký tự '%c' xuất hiện %d lần\n", i, count[i]);
+    for (int i =0;i<256;i++){
+        if (n[i]>0){
+            printf ("%c : %d\n",i,n[i]);
         }
     }
-
     return 0;
+    
 }
