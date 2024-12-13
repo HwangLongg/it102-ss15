@@ -12,7 +12,7 @@ int main() {
         }
     }
 
-    printf("Chuỗi sau khi viết hoa chữ cái đầu của mỗi từ: %s\n", text);
+    printf("sau khi viet hoa chu cai dau: %s\n", text);
 
     return 0;
 }
